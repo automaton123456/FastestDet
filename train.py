@@ -124,7 +124,10 @@ class FastestDet:
                 self.model.eval()
                 print("computer mAP...")
                 mAP05 = self.evaluation.compute_map(self.val_dataloader, self.model)
-                torch.save(self.model.state_dict(), "checkpoint/weight_AP05:%f_%d-epoch.pth"%(mAP05, epoch))
+                #torch.save(self.model.state_dict(), "checkpoint/weight_AP05:%f_%d-epoch.pth"%(mAP05, epoch))
+                torch.save(self.model.state_dict(), "/content/drive/MyDrive/FastestDet/weight_AP05:%f_%d-epoch.pth"%(mAP05, epoch))
+                
+                
 
             # 学习率调整
             self.scheduler.step()
