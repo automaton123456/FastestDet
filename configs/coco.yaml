@@ -1,9 +1,12 @@
 DATASET:
-  TRAIN: "/home/qiuqiu/Desktop/coco2017/train2017.txt"
-  VAL: "/home/qiuqiu/Desktop/coco2017/val2017.txt"
-  NAMES: "configs/coco.names"
+  #TRAIN: "/home/qiuqiu/Desktop/coco2017/train2017.txt"
+  #VAL: "/home/qiuqiu/Desktop/coco2017/val2017.txt"
+  #NAMES: "configs/coco.names"
+  TRAIN: "/content/YoloDataset/train.txt"
+  VAL: "/content/YoloDataset/val.txt"
+  NAMES: "/content/YoloDataset/category.names"
 MODEL:
-  NC: 80
+  NC: 5
   INPUT_WIDTH: 352
   INPUT_HEIGHT: 352
 TRAIN:
